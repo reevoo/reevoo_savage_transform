@@ -1,4 +1,5 @@
-= Savage
+= Reevoo Savage Transform
+The original gem is on https://github.com/qhwa/savage, which we had to fork and publish it to our internal gems server. This gem was not published on Rubygems.org and was not possible to use it as a dependency in our scores_svg gem.
 
 A little gem for extracting and manipulating SVG vector path data, Savage will make your life easier when it comes time to dynamically draw new and manipulate existing SVG paths. No more wacky regex to capture those cryptic path data strings; just pass the whole "d" attribute into Savage's parser, et voilá: You'll be given an instance of Savage::Path, replete with an array of subpaths split on the "move to" commands (to better help with those pesky winding issues). In turn, each subpath contains its own array of directions that can be swapped around, reconfigured, and otherwise manipulated to your heart's content in a truly human-readable way.
 
